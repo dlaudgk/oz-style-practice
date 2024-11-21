@@ -23,6 +23,12 @@
 $tag-color: #d7fa00;
 $gray: rgb(160, 160, 160);
 
+// 1️⃣. App.jsx
+section {
+  @include flex($wrap: wrap, $gap: 20px);
+  padding: 20px 40px;
+}
+
 .header-container {
   @include flex($justify: space-between, $align: center);
   padding: 20px 20px;
@@ -34,11 +40,6 @@ $gray: rgb(160, 160, 160);
       list-style: none;
     }
   }
-}
-
-section {
-  @include flex($justify: center, $align: center, $wrap: wrap, $gap: 20px);
-  padding: 20px 40px;
 }
 
 .content-container {
